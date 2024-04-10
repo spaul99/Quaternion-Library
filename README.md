@@ -1,5 +1,6 @@
 # Quaternion Transformation Library
 
+## Description
 This is a simple quaternion library designed to facilitate transformation between quaternions, rotation matrices, Euler angles, and more. It provides the following conversion functionalities:
 
 - **Axis and Angle to Quaternion:** Utilize the function `axisAngle2quatern(axis, angle)`
@@ -11,6 +12,12 @@ This is a simple quaternion library designed to facilitate transformation betwee
 - **Quaternion Product:** Compute the quaternion product of quaternion `a` and `b` using the function `quaternProd(a, b)`
 - **Rotation Matrix to Euler Angle:** Utilize the function `rotMat2euler(R)`
 - **Rotation Matrix to Quaternion:** Employ the function `rotMat2quatern(R)`
+
+## Installation
+To get started run 
+```sh
+pip install quatlib
+```
 ## Input & Output Data Types
 
 For input and output, the library expects and provides the following data types:
