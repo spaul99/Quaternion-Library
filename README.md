@@ -1,39 +1,32 @@
-This is a very basic quaternion library for transformation between quaternion, Rotation matrix, Euler angle and many more. It have the following conversion abilitys,
+# Quaternion Transformation Library
 
-Axis and angle to quaternion using the function 'axisAngle2quatern(axis, angle)'
+This is a simple quaternion library designed to facilitate transformation between quaternions, rotation matrices, Euler angles, and more. It provides the following conversion functionalities:
 
-Axis and angle to Rotation matrix using the function 'axisAngle2rotMat(axis, angle)'
+- **Axis and Angle to Quaternion:** Utilize the function `axisAngle2quatern(axis, angle)`
+- **Axis and Angle to Rotation Matrix:** Employ the function `axisAngle2rotMat(axis, angle)`
+- **Euler Angle to Rotation Matrix:** Utilize the function `euler2rotMat(phi, theta, psi)`
+- **Quaternion to Euler Angle:** Utilize the function `quatern2euler(q)`
+- **Quaternion to Rotation Matrix:** Employ the function `quatern2rotMat(q)`
+- **Conjugate of a Quaternion:** Calculate the conjugate of a quaternion using the function `quaternConj(q)`
+- **Quaternion Product:** Compute the quaternion product of quaternion `a` and `b` using the function `quaternProd(a, b)`
+- **Rotation Matrix to Euler Angle:** Utilize the function `rotMat2euler(R)`
+- **Rotation Matrix to Quaternion:** Employ the function `rotMat2quatern(R)`
+## Input & Output Data Types
 
-Euler angle to Rotation matrix using the function 'euler2rotMat(phi, theta, psi)'
+For input and output, the library expects and provides the following data types:
 
-Quaternion to euler angle using the function 'quatern2euler(q)'
-
-Quaternion to Rotation matrix using the function 'quatern2rotMat(q)'
-
-Converts a quaternion to its conjugate using the function 'quaternConj(q)'
-
-Calculates the quaternion product of quaternion a and b using the function 'quaternProd(a, b)'
-
-Rotation matrix to Euler angle using the function 'rotMat2euler(R)'
-
-Rotation matrix to quaternion using the function 'rotMat2quatern(R)'
-
-
-Input & Output Datatypes
-
-Angles:	Radian(float)
-
-Quaternion: array $$\mathbb{Q} = [qw,qx,qy,qz]$$
-
-Axis: array[x,y,z]
-
-Rotation Matrix: In (3x3) matrix/array form Like,
+- **Angles:** `Radian(float)`
+- **Quaternion:** `Array` $$\mathbb{Q} = [qw, qx, qy, qz]$$
+- **Axis:** Array `[x, y, z]`
+- **Rotation Matrix:** `In (3x3) matrix/array form like:`
 
 $$
 R =
-\left(\begin{array}{cc}
+\left(\begin{array}{ccc}
 R11 & R12 & R13 \\
 R21 & R22 & R23 \\
 R31 & R32 & R33
 \end{array}\right)
 $$
+
+Feel free to utilize this library for your quaternion transformation needs.
