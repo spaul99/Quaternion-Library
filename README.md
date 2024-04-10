@@ -23,7 +23,7 @@ Input & Output Datatypes
 
 Angles:	Radian(float)
 
-Quaternion: array[qw,qx,qy,qz]
+Quaternion: array $$\Q = [qw,qx,qy,qz]$$
 
 Axis: array[x,y,z]
 
